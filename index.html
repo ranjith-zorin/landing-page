@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="./logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+    />
+    <style></style>
+    <title>Nextcent</title>
+  </head>
+
+  <style></style>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-container">
+          <div class="flex center" style="flex-grow: 1">
+            <img
+              src="./logo.png"
+              alt="logo"
+              srcset=""
+              width="24"
+              height="18"
+              style="margin-right: 4px"
+            />
+            <h3
+              class="company-name"
+              style="font-weight: 700; letter-spacing: 1px; font-size: 1.2rem"
+            >
+              Nexcent
+            </h3>
+          </div>
+          <div class="link-div flex around" style="flex-grow: 0.6">
+            <a href="" class="nav-link hideOnMobile md">Home </a>
+
+            <a href="" class="nav-link hideOnMobile regular">Service</a>
+            <a href="" class="nav-link hideOnMobile regular">Feature</a>
+            <a href="" class="nav-link hideOnMobile regular">Product</a>
+            <a href="" class="nav-link hideOnMobile regular">Testimonial</a>
+            <a href="" class="nav-link hideOnMobile regular">FAQ</a>
+          </div>
+
+          <div class="flex center login-signup" style="flex-grow: 1">
+            <div class="grid g-col g-center" style="column-gap: 24px">
+              <a class="login nav-link md" href="">Login</a>
+              <button
+                class="pg-btn pointer md"
+                style="
+                  border-radius: 8px;
+                  width: 8rem;
+                  height: 2.5rem;
+                  padding: 4px 4px;
+                "
+              >
+                Sign up
+              </button>
+            </div>
+          </div>
+          <span class="flex center sidebar-btn" onclick="showSideBar(true)">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000000"
+              class="pointer"
+              style="align-self: center"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </span>
+        </div>
+
+        <div class="sidebar" style="padding: 2rem 0px">
+          <span
+            onclick="showSideBar(false)"
+            style="
+              position: absolute;
+              right: 0;
+              margin-right: 2rem;
+              cursor: pointer;
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000000"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </span>
+          <div style="height: 100%" class="sidebar-div">
+            <a href="" class="header-nav-link">Home </a>
+            <a href="" class="header-nav-link">Service</a>
+            <a href="" class="header-nav-link">Feature</a>
+            <a href="" class="header-nav-link">Product</a>
+            <a href="" class="header-nav-link">Testimonial</a>
+            <a href="" class="header-nav-link">FAQ</a>
+
+            <!-- <a class="login nav-link" href="">Login</a>
+            <button class="pg-btn pointer">Sign up</button> -->
+          </div>
+        </div>
+      </header>
+      <div class="content grid" style="row-gap: 3rem">
+        <div class="carousel">
+          <div class="left-side grid">
+            <h1 class="semibold">
+              Lessons and insights
+              <span class="year semibold"> from 8 years</span>
+            </h1>
+            <h5 class="txt-sd regular">
+              Where to grow your business as a photographer: site or social
+              media?
+            </h5>
+            <button class="pg-btn pointer">Register</button>
+          </div>
+          <div>
+            <img
+              class="large-image"
+              src="./work.png"
+              alt=""
+              srcset=""
+              style="height: auto"
+            />
+          </div>
+        </div>
+        <div class="our-clients grid g-center">
+          <div class="grid left-side">
+            <h2 class="txt-ctr txt-pg semibold">Our Clients</h2>
+            <h5 class="txt-ctr client-txt regular">
+              We have been working with some Fortune 500+ clients
+            </h5>
+          </div>
+          <div class="right-sec">
+            <img src="./client1.png" alt="" class="client-logo" />
+            <img src="./client2.png" alt="" class="client-logo" />
+            <img src="./client3.png" alt="" class="client-logo" />
+            <img src="./client4.png" alt="" class="client-logo" />
+            <img src="./client5.png" alt="" class="client-logo" />
+            <img src="./client6.png" alt="" class="client-logo" />
+            <img src="./client7.png" alt="" class="client-logo" />
+          </div>
+        </div>
+        <div class="suitable-container grid" style="row-gap: 30px">
+          <div class="left-side grid">
+            <h2 class="txt-pg txt-ctr semibold">
+              Manage your entire community in a single system
+            </h2>
+            <h5 class="txt-sd txt-ctr regular" style="font-size: 16px">
+              Who is Nextcent suitable for?
+            </h5>
+          </div>
+          <div class="suitable-card grid g-col g-center">
+            <div class="suitable-card-child">
+              <img src="./Icon1.png" alt="" class="m-auto" /> 
+
+              <div class="flex center">
+                <h3 class="txt-pg txt-ctr suitable-txt-h2 bold">
+                  Membership Organisations
+                </h3>
+              </div>
+              <h6 class="suitable-txt-h6 regular txt-sd line-height txt-ctr">
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </h6>
+            </div>
+            <div class="suitable-card-child">
+              <img src="./icon2.png" alt="" srcset="" class="m-auto" />
+              <div class="flex center">
+                <h3 class="txt-pg txt-ctr suitable-txt-h2 bold">
+                  National Associations
+                </h3>
+              </div>
+              <h6 class="suitable-txt-h6 regular txt-sd line-height txt-ctr">
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </h6>
+            </div>
+            <div class="suitable-card-child">
+              <img src="./Icon3.png" alt="" class="m-auto" />
+
+              <div class="flex center">
+                <h3 class="txt-pg txt-ctr suitable-txt-h2 bold">
+                  Clubs And Groups
+                </h3>
+              </div>
+              <h6 class="suitable-txt-h6 regular txt-sd line-height txt-ctr">
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="pixel-grade grid g-col g-center">
+          <div class="left-side">
+            <img
+              class="large-image"
+              src="./pixelgrade.png"
+              alt=""
+              srcset=""
+              style="height: auto"
+            />
+          </div>
+          <div class="grid" style="row-gap: 32px">
+            <div class="grid" style="row-gap: 16px">
+              <h2 class="txt-pg semibold">
+                The unseen of spending three years at Pixelgrade
+              </h2>
+              <h5
+                class="text-line-3 txt-sd regular"
+                style="max-width: 600px; line-height: 20px; font-size: 16px"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Provident iure voluptatem ipsam repellat commodi, ipsa alias
+                assumenda ex error omnis ullam iste placeat amet unde ut
+                praesentium totam ipsum perferendis!
+              </h5>
+            </div>
+            <button class="pg-btn">Learn more</button>
+          </div>
+        </div>
+        <div class="help-container" style="background-color: #f5f7fa">
+          <div class="flex center">
+            <div>
+              <h2 class="semibold">
+                Helping a local
+                <span class="pg-color"> business reinvent itself </span>
+              </h2>
+              <h5 class="txt-sd" style="margin-top: 4px; font-size: 16px">
+                We reached here with our hard work and dedication
+              </h5>
+            </div>
+          </div>
+          <div class="help-num-txt">
+            <div class="help-num-container flex around">
+              <div class="flex number-icon">
+                <img src="./Iconman.png" class="image" alt="" srcset="" />
+                <div>
+                  <h3 class="help-num">2,245,341</h3>
+                  <h5 class="txt-sd">Members</h5>
+                </div>
+              </div>
+              <div class="flex number-icon">
+                <img src="./Iconhand.png" class="image" alt="" srcset="" />
+
+                <div>
+                  <h3 class="help-num">2,245,341</h3>
+                  <h5 class="txt-sd">Clubs</h5>
+                </div>
+              </div>
+            </div>
+            <div class="help-num-container flex around">
+              <div class="flex number-icon">
+                <img src="./Iconclick.png" class="image" alt="" srcset="" />
+                <div>
+                  <h3 class="help-num txt-ctr">2,245,341</h3>
+                  <h5 class="txt-sd txt-ctr" style="overflow: scroll">
+                    Event Bookings
+                  </h5>
+                </div>
+              </div>
+
+              <div class="flex number-icon">
+                <img class="image" src="./Iconwallet.png" alt="" srcset="" />
+                <div>
+                  <h3 class="help-num">2,245,341</h3>
+                  <h5 class="txt-sd">Payments</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="how-to-div">
+          <div class="flex center">
+            <img
+              class="large-image"
+              src="./howto.png"
+              alt=""
+              srcset=""
+              style="height: auto; max-width: 473px; max-height: 473px"
+            />
+          </div>
+
+          <div
+            class="grid"
+            style="align-self: center; max-width: 800px; row-gap: 1.6rem"
+          >
+            <h2 class="how-to-h2 semibold">
+              How to design your site footer like we did
+            </h2>
+            <h5 class="how-to-h5 regular txt-sd">
+              Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
+              augue nec tincidunt molestie, massa nunc varius arcu, at
+              scelerisque elit erat a magna. Donec quis erat at libero ultrices
+              mollis. In hac habitasse platea dictumst. Vivamus vehicula leo
+              dui, at porta nisi facilisis finibus. In euismod augue vitae nisi
+              ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla
+              commodo faucibus efficitur quis massa. Praesent felis est, finibus
+              et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus
+              ipsum id gravida.
+            </h5>
+            <button class="pg-btn pointer">Learn More</button>
+          </div>
+        </div>
+        <div class="meet-customer grid g-col" style="background-color: #f5f7fa">
+          <img
+            src="./avg.png"
+            alt=""
+            srcset=""
+            style="height: auto; max-width: 473px"
+            class="large-image"
+          />
+          <div class="meet-right grid" style="padding: 10px 0px">
+            <h6
+              class="txt-sd"
+              style="line-height: 24px; font-size: 1rem; max-width: 800px"
+            >
+              Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+              lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
+              enim metus. Vivamus sed libero ornare, tristique quam in, gravida
+              enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet
+              elit at ligula molestie, nec molestie mi blandit. Suspendisse
+              cursus tellus sed augue ultrices, quis tristique nulla sodales.
+              Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse
+              potenti. Quisque malesuada enim sapien, vitae placerat ante
+              feugiat eget. Quisque vulputate odio neque, eget efficitur libero
+              condimentum id. Curabitur id nibh id sem dignissim finibus ac sit
+              amet magna.
+            </h6>
+
+            <div>
+              <h5
+                class="pg-color md"
+                style="font-size: 20px; line-height: 28px"
+              >
+                Tim Smith
+              </h5>
+              <h5 class="txt-sd" style="font-size: 16px; margin-top: 8px">
+                British Dragon Boat Racing Association
+              </h5>
+            </div>
+            <div class="meet-all-customer">
+              <div class="flex between">
+                <img src="./client1.png" alt="" class="client-logo" />
+                <img src="./client2.png" alt="" class="client-logo" />
+                <img src="./client3.png" alt="" class="client-logo" />
+                <img src="./client4.png" alt="" class="client-logo" />
+                <img src="./client5.png" alt="" class="client-logo" />
+              </div>
+              <h5
+                class="txt-ctr"
+                style="
+                  font-size: 1.2rem;
+                  font-weight: bold;
+                  color: #4caf4f;
+                  line-height: 2rem;
+                "
+              >
+                Meet all customers
+                <span style="margin-left: 8px"> &#x2192; </span>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="marketing">
+          <div class="caring-txt-div">
+            <h2 class="txt-ctr txt-pg caring-h2 semibold">
+              Caring is the new marketing
+            </h2>
+            <h5
+              class="txt-ctr txt-sd regular"
+              style="line-height: 24px; max-width: 650px; font-size: 1rem"
+            >
+              The Nexcent blog is the best place to read about the latest
+              membership insights, trends and more. See who's joining the
+              community, read about how our community are increasing their
+              membership income and lot's more.​
+            </h5>
+          </div>
+          <div class="marketing-container grid g-col">
+            <div class="marketing-box">
+              <img
+                class="large-image"
+                src="./marketing2.png"
+                alt=""
+                style="height: auto"
+              />
+              <div class="box">
+                <h3 class="box-h3 semibold txt-pg">
+                  Creating Streamlined Safeguarding Processes with OneRen
+                </h3>
+                <h3 class="pg-color box-h3">Readmore &#8594;</h3>
+              </div>
+            </div>
+            <div class="marketing-box">
+              <img
+                class="large-image"
+                src="./marketing1.png"
+                alt=""
+                style="height: auto"
+              />
+              <div class="box">
+                <h3 class="box-h3 semibold txt-pg">
+                  What are your safeguarding responsibilities and how can you
+                  manage them?
+                </h3>
+                <h3 class="pg-color box-h3">Readmore &#8594;</h3>
+              </div>
+            </div>
+            <div class="marketing-box">
+              <img
+                class="large-image"
+                src="./marketing3.png"
+                alt=""
+                style="height: auto"
+              />
+              <div class="box">
+                <h3 class="box-h3 semibold txt-pg">
+                  Revamping the Membership Model with Triathlon Australia
+                </h3>
+                <h3 class="pg-color box-h3">Readmore &#8594;</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="get-demo grid g-center" style="background-color: #f5f7fa">
+          <h1 class="semibold">Pellentesque suscipit fringilla libero eu.</h1>
+          <button class="pg-btn pointer">Get a Demo &#x2192;</button>
+        </div>
+      </div>
+
+      <footer>
+        <div>
+          <div class="footer-container grid g-col">
+            <div class="grid copy-right">
+              <h2><img src="logo.png" alt="" />Nexcent</h2>
+            </div>
+            <div class="footer-nav-div">
+              <div class="grid company">
+                <h4 style="font-size: 20px" class="semibold">Company</h4>
+                <div class="grid links">
+                  <a href="" class="nav-link regular" style="color: white"
+                    >About us
+                  </a>
+                  <a href="" class="nav-link regular" style="color: white"
+                    >Blog</a
+                  >
+                  <a href="" class="nav-link regular" style="color: white"
+                    >Contact us</a
+                  >
+                  <a href="" class="nav-link regular" style="color: white"
+                    >Pricing</a
+                  >
+                  <a href="" class="nav-link regular" style="color: white"
+                    >Testimonials</a
+                  >
+                </div>
+              </div>
+              <div class="grid company">
+                <h4 style="font-size: 20px" class="semibold">Support</h4>
+                <div class="grid links">
+                  <a href="" class="nav-link regular" style="color: white"
+                    >Help center</a
+                  >
+                  <a href="" class="nav-link regular" style="color: white"
+                    >Terms of service</a
+                  >
+                  <a href="" class="nav-link regular" style="color: white"
+                    >Legal</a
+                  >
+                  <a href="" class="nav-link regular" style="color: white"
+                    >Privacy policy</a
+                  >
+                  <a href="" class="nav-link regular" style="color: white"
+                    >Status</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="grid" style="justify-content: center;row-gap: 1.2rem;">
+              <div
+                class="flex column around"
+                style="align-items: center; font-size: 20px; font-weight: 600"
+              >
+                <h4
+                  style="align-self: center;margin-bottom:6px"
+                  class="semibold"
+                >
+                  Stay up to date
+                </h4>
+                <div class="search">
+                  <img src="./send.png" alt="" srcset="" />
+                  <input type="email" placeholder="Your Email address" />
+                </div>
+              </div>
+              <div class="icons flex between" style="align-items: center">
+                <img src="./insta.png" alt="" />
+                <img src="./earth.png" alt="" />
+                <img src="./twitter.png" alt="" />
+                <img src="./youtube.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="regular txt-ctr" style="margin-top: 4px">
+          Copyright @ 2020 Nexcent ltd.All rights reserved.
+        </p>
+      </footer>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
