@@ -54,7 +54,7 @@
 }
 .content {
   display: grid;
-  row-gap: 2.5rem;
+  row-gap: 4rem;
 }
 .flex {
   display: flex;
@@ -112,6 +112,7 @@
 
 .our-clients {
   row-gap: 1rem;
+  margin-top: 8rem;
 }
 
 .our-clients > .left-side {
@@ -222,6 +223,7 @@ footer {
   place-items: center;
   grid-template-columns: 1.2fr 1fr;
   background-color: #f5f7fa;
+  height: 65vh;
 }
 .carousel .left-side {
   row-gap: 12px;
@@ -232,7 +234,7 @@ footer {
 }
 
 .carousel h1 {
-  max-width: 657px;
+  max-width: 500px;
   font-size: 3.2rem;
   line-height: 1rem;
 }
@@ -251,11 +253,13 @@ footer {
 /* .suitable-container {
   justify-content: center;
 } */
-.help-container {
+/* .help-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   padding: 4rem 0px;
-}
+  background-color: red;
+} */
 .help-container h2 {
   font-size: 2.3rem;
   width: 70%;
@@ -290,7 +294,7 @@ footer {
 }
 .suitable-txt-h6 {
   font-size: 14px;
-  min-width: 300px;
+  max-width: 300px;
   text-indent: 28px;
   align-self: center;
 }
@@ -342,7 +346,7 @@ footer {
   border-radius: 18px;
   background-color: rgba(255, 255, 255);
   height: 179px;
-  width: 80%;
+  width: 70%;
   margin: auto;
   padding: 12px;
   text-align: center;
@@ -438,7 +442,8 @@ input[type="email"]:focus {
   row-gap: 0.8rem;
 }
 .large-image {
-  width: 90%;
+  width: 80%;
+  height: auto;
 }
 .box-h3 {
   font-size: 1.1rem;
@@ -452,6 +457,14 @@ input[type="email"]:focus {
 }
 .meet-customer {
   padding: 2rem;
+}
+/* yt-side {
+  height: 100%;
+} */
+
+.carousel .right-side {
+  height: 100%;
+  width: 30%;
 }
 @media screen and (max-width: 1000px) {
   .footer-nav-div {
@@ -469,7 +482,7 @@ input[type="email"]:focus {
   }
   .large-image {
     display: block;
-    width: 70%;
+    width: 100%%;
     margin: auto;
   }
 
@@ -496,6 +509,10 @@ input[type="email"]:focus {
   }
   .carousel .left-side {
     row-gap: 14px;
+  }
+  .carousel .right-side {
+    /* background-color: red; */
+    width: 100%;
   }
   .carousel img {
     margin-top: 1rem;
@@ -692,14 +709,13 @@ input[type="email"]:focus {
   }
 }
 @media screen and (min-width: 100px) and (max-width: 317px) {
-    
   .our-clients .right-sec {
     background-color: red;
     display: inline-flex;
     width: 100%;
     flex-wrap: wrap;
   }
-  }
+}
 @media screen and (min-width: 600px) {
   .our-clients .right-sec {
     column-gap: 3rem;
@@ -716,6 +732,37 @@ input[type="email"]:focus {
     justify-items: center;
   }
 }
+@media screen and (max-width: 600px) {
+  .carousel .right-side {
+    width: 100%;
+  }
+  .box
+  {
+    width: 70%;;
+  }
+  .carousel img 
+  {
+   max-width: 300px;
+   width: 100%;
+
+  }
+}
+@media screen and (min-width:601px) and (max-width:630px) {
+  .carousel img
+  {
+    width: 350px;
+    margin: auto;
+  } 
+
+  
+}
+@media screen and (max-width: 1000px) {
+  .help-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+}
 @media screen and (min-width: 778px) {
   .our-clients .right-sec {
     column-gap: 4rem;
@@ -727,5 +774,68 @@ input[type="email"]:focus {
   }
   .our-clients .right-sec {
     column-gap: 5.8rem;
+  }
+}
+@media screen and (min-width: 620px) and (max-width: 999px) {
+  .suitable-txt-h6 {
+    max-width: 300px;
+  }
+  .carousel .right-side {
+    /* background-color: red; */
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .suitable-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .suitable-txt-h6 {
+    max-width: 300px;
+  }
+  .help-container {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+  }
+  .carousel .right-side {
+    /* background-color: red; */
+    width: 450px;
+  }
+  .marketing-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+   justify-content: space-evenly;
+   row-gap: 8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .large-image {
+    height: 100%;
+  }
+  .suitable-txt-h6 {
+    max-width: 300px;
+  }
+  .help-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 6rem;
+  }
+  .pixel-grade {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
